@@ -1,0 +1,33 @@
+.page-title {
+	margin-top: 32px;
+
+	@media screen and (max-width: 768px) {
+		margin-top: 16px;
+	}
+}
+
+.page-title__content {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 16px;
+	text-align: center;
+	padding: 144px 0;
+}
+
+.page-title__text {
+	color: $accent;
+	font-family: $accentfont;
+}
+
+.page-title__main {
+	font-size: clamp(1.75rem, 0.8095rem + 4.0129vw, 5.625rem);
+}
+
+.page-title__submain {
+	font-size: clamp(0.875rem, 0.4502rem + 1.8123vw, 2.625rem);
+}
+
+.page-title__desc {
+	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+}

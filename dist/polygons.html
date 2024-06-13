@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!-- <base href="/"> -->
+
+		<title>Страйкбол</title>
+		<meta name="description" content="Страйкбол" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<link rel="icon" href="images/favicon.png" />
+		<meta property="og:image" content="images/dist/preview.jpg" />
+
+		<link rel="stylesheet" href="css/app.min.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<a class="logo header__logo" href="index.html">
+					<img class="header__logo-image" src="./images/dist/logo.png" alt="Логотип" />
+				</a>
+				<nav class="header__menu">
+					<ul class="header__links-list">
+						<li class="header__links-list-item">
+							<a class="header__link" href="about.html">О нас</a>
+						</li>
+						<li class="header__links-list-item header__links-list-item--dropdown">
+							<a class="header__link header__link--dropdown" href="#">Подробнее</a>
+
+							<div class="dropdown">
+								<ul class="dropdown__links-list">
+									<li class="dropdown__links-list-item">
+										<a class="dropdown__link" href="polygons.html">Где мы играем</a>
+									</li>
+									<li class="dropdown__links-list-item">
+										<a class="dropdown__link" href="games.html">Общие игры</a>
+									</li>
+									<li class="dropdown__links-list-item">
+										<a class="dropdown__link" href="events.html">Дни рождения, корпоративы</a>
+									</li>
+									<li class="dropdown__links-list-item">
+										<a class="dropdown__link" href="certificate.html">Подарочные сертификаты</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="header__links-list-item">
+							<a class="header__link" href="rent.html">Прокат оборудования</a>
+						</li>
+						<li class="header__links-list-item">
+							<a class="header__link" href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="mobile-menu__icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="mobile-menu">
+				<div class="mobile-menu__main">
+					<a class="mobile-menu__link" href="about.html">О нас</a>
+					<p class="mobile-menu__link mobile-menu__link--dropdown" href="#">Подробнее</p>
+					<div class="mobile-menu__dropdown">
+						<a class="mobile-menu__dropdown-link" href="polygons.html">Где мы играем</a>
+						<a class="mobile-menu__dropdown-link" href="games.html">Общие игры</a>
+						<a class="mobile-menu__dropdown-link" href="events.html">Дни рождения, корпоративы</a>
+						<a class="mobile-menu__dropdown-link" href="certificate.html">Подарочные сертификаты</a>
+					</div>
+					<a class="mobile-menu__link" href="rent.html"
+						>Прокат <br />
+						оборудования</a
+					>
+					<a class="mobile-menu__link" href="contacts.html">Контакты</a>
+				</div>
+				<div class="mobile-menu__footer">
+					<a class="mobile-menu__tel" href="tel:+7(928) 296-25-89">8 (928) 296-25-89</a>
+					<div class="mobile-menu__social">
+						<a href="#0">
+							<img src="./images/dist/Component 2.png" alt="Иконка Вконтакте" />
+						</a>
+						<a href="#0">
+							<img src="./images/dist/Component 3.png" alt="Иконка Инстаграм" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+	</body>
+</html>
+
+
+<section class="container page-section page-title">
+	<div class="page-title__content" style="background-image: url(./images/dist/banner-polygons.png)">
+		<h1 class="page-title__text page-title__main">Наши полигоны</h1>
+	</div>
+</section>
+
+<section class="container page-section promo">
+	<div class="promo__item promo__item--s">
+		<p class="promo__item-text"><span class="promo__item--accent">Уникальные</span></p>
+	</div>
+	<div class="promo__item promo__item--right promo__item--s">
+		<p class="promo__item-text">площадки для игры <br /></p>
+	</div>
+	<div class="promo__item promo__item--right promo__item--s">
+		<p class="promo__item-text">
+			<span class="promo__item--accent">в страйкбол!</span>
+		</p>
+	</div>
+</section>
+
+<section class="container page-section polygons">
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/kosovo/1.png" alt="asd" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="kosovo">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Косово</h2>
+				<p class="polygon__coords">47°18'26.7"N 39°57'57.5"E</p>
+			</div>
+			<div class="polygon__block">
+				<p class="polygon__subtitle">Как проехать:</p>
+				<p class="polygon__desc">
+					Через Аксай выезжаем на старую ростовскую трассу и двигаемся в сторону Новочеркасска. После посёлка
+					"Реконструктор" есть поворот на "Пчеловодный", поворачиваем туда и двигаемся по улице не сворачивая
+					до перекрестка (Справа будет остановка). На перекрестке сворачиваем круто налево на грунтовку вдоль
+					лесополосы (слева должна быть лесополоса, а с права дома). И двигаемся по прямой никуда не
+					сворачивая еще метров 500 пока не приедем на большую открытую поляну.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/cows/1.png" alt="asd" class="polygon__img" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="cows">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Коровники</h2>
+				<p class="polygon__coords">47.050046, 39.774517</p>
+			</div>
+			<div class="polygon__block">
+				<p class="polygon__subtitle">Как проехать:</p>
+				<p class="polygon__desc">Территория Х</p>
+				<p class="polygon__subtitle">Координаты для парковки:</p>
+				<p class="polygon__desc">
+					47.275897, <br />
+					39.832590
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/room/1.png" alt="asd" class="polygon__img" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="room">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Подсобка</h2>
+				<p class="polygon__coords">47.111913, 39.767360</p>
+			</div>
+			<div class="polygon__block">
+				<p class="polygon__subtitle">Как проехать:</p>
+				<p class="polygon__desc">Ближайший адрес: поселок СКВО, г. Батайск ул. Механизаторов, 12</p>
+			</div>
+		</div>
+	</div>
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/island/1.png" alt="asd" class="polygon__img" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="island">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Зелёный остров</h2>
+				<p class="polygon__coords">47.212573, 39.791996</p>
+			</div>
+			<div class="polygon__block">
+				<p class="polygon__subtitle">Как проехать:</p>
+				<p class="polygon__desc">
+					Проезд на сам зеленый остров находится в самом низу на ул. 29-линия. После пересечения понтонного
+					моста двигаемся по главной дороге до Базы отдыха КАШАЛОТ, следующая после неё база и есть наш
+					полигон!
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/barrack/1.png" alt="asd" class="polygon__img" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="barrack">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Казарма</h2>
+				<p class="polygon__coords">47.239719, 39.840758</p>
+			</div>
+		</div>
+	</div>
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/trash/1.png" alt="asd" class="polygon__img" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="trash">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Мусорка</h2>
+				<p class="polygon__coords">47.254120, 39.664406</p>
+			</div>
+			<div class="polygon__block">
+				<p class="polygon__subtitle">Как проехать:</p>
+				<p class="polygon__desc">ул. Прогулочная, 1</p>
+			</div>
+		</div>
+	</div>
+	<div class="polygon">
+		<div class="polygon__img">
+			<img src="./images/dist/polygons/arbat/1.png" alt="asd" class="polygon__img" />
+			<div class="polygon__img--overlay">
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<span class="polygon__img--triangle"></span>
+				<button class="button button--transparent polygon__open-gallery" data-polygon="arbat">
+					Смотреть все фото
+				</button>
+			</div>
+		</div>
+
+		<div class="polygon__text">
+			<div class="polygon__block">
+				<h2 class="polygon__title">Арбат Арена</h2>
+				<p class="polygon__coords">47.220701, 39.752455</p>
+			</div>
+			<div class="polygon__block">
+				<p class="polygon__subtitle">Как проехать:</p>
+				<p class="polygon__desc">Первая линия 74/95</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="gallery-modal">
+	<div class="gallery-modal__container">
+		<div class="gallery-modal__close">
+			<img src="./images/dist/icon-close.png" alt="c" />
+		</div>
+		<div class="swiper gallery-modal__slider">
+			<span class="gallery-modal--prev slider-arrow">
+				<img src="./images/dist/icon-arrow-left.png" alt="a" />
+			</span>
+			<div class="swiper-wrapper gallery-modal__wrapper"></div>
+
+			<span class="gallery-modal--next slider-arrow">
+				<img src="./images/dist/icon-arrow-right.png" alt="a" />
+			</span>
+		</div>
+		<div class="gallery-modal__pagination swiper-pagination"></div>
+		<div class="swiper gallery-modal__thumbs">
+			<div class="swiper-wrapper gallery-thumbs__wrapper"></div>
+		</div>
+	</div>
+</div>
+
+<section id="contact" class="contacts">
+	<div class="container contacts__container">
+		<div class="contacts__left-inner">
+			<h3 class="contacts__left-title">Контакты</h3>
+			<nav class="contacts__menu-left">
+				<li class="icon__links">
+					<a href="#0">
+						<img class="icon icon-img" src="./images/dist/Component 1.png" alt="Иконка телефона"
+					/></a>
+					<a class="links-phone" href="tel:+70000000000"
+						>+7 (928) 296-25-89 <br />
+						<p class="icon__links-desc-phone">Телефон для записи и проката оборудования</p>
+					</a>
+				</li>
+				<li class="icon__links">
+					<a href="#0">
+						<img class="icon icon-img" src="./images/dist/Component 2.png" alt="Иконка Вконтакте" />
+					</a>
+					<a class="links-vk" href="#0"
+						>vk.com/<span class="link__letter-spacing">strikeball61</span>
+						<p class="icon__links-desc-vk">Группа вконтакте</p>
+					</a>
+				</li>
+				<li class="icon__links">
+					<a href="#0">
+						<img class="icon icon-img" src="./images/dist/Component 3.png" alt="Иконка Инстаграм" />
+					</a>
+					<a class="links-inst" href="#"
+						>@strikeball_v_ro<span class="link__letter-spacing">stove</span>
+						<br />
+						<p class="icon__links-desc-inst">Запрещенная соцсеть</p>
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="contacts__right-inner">
+			<form class="contacts-form">
+				<h3 class="forms-record">
+					Записаться <br />
+					на игру
+				</h3>
+				<input name="name" id="input-name" class="contacts-input" placeholder="Ваше имя" type="text" />
+				<input name="phone" id="input-phone" class="contacts-input" placeholder="Номер телефона" type="tel" />
+				<button class="button contacts-button" type="submit">Записаться</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<div class="contact-modal contact-modal--success">
+	<img src="./images/dist/icon-close.png" alt="" class="contact-modal__close" />
+	<img src="./images/dist/icon-success.png" alt="Успешно" class="contact-modal__img" />
+	<h3 class="contact-modal__title">Ваша заявка принята!</h3>
+	<p class="contact-modal__desc">Наши организаторы свяжутся с вами в ближайшее время</p>
+</div>
+
+<div class="contact-modal contact-modal--error">
+	<img src="./images/dist/icon-close.png" alt="" class="contact-modal__close" />
+	<img src="./images/dist/icon-error.png" alt="Успешно" class="contact-modal__img" />
+	<h3 class="contact-modal__title">ой, что-то пошло не так!</h3>
+	<p class="contact-modal__desc">
+		В данный момент заявка не отправлена, <br />
+		попробуйте ещё раз
+	</p>
+</div>
+
+
+		<footer class="footer container">
+			<a class="logo footer__logo">
+				<img class="footer__logo-image" src="./images/dist/logo.png" alt="Логотип" />
+			</a>
+			<a class="footer__phone" href="tel:+7(928) 296-25-89">8 (928) 296-25-89</a>
+			<nav class="footer__menu">
+				<ul class="footer__socials-links">
+					<li class="socials-links">
+						<a href="#0">
+							<img
+								class="icon footer__social-icon"
+								src="./images/dist/Component 2.png"
+								alt="Иконка Вконтакте"
+							/>
+						</a>
+					</li>
+					<li class="socials-links">
+						<a href="#0">
+							<img
+								class="icon footer__social-icon"
+								src="./images/dist/Component 3.png"
+								alt="Иконка Инстаграм"
+							/>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

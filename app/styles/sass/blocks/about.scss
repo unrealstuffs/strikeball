@@ -1,0 +1,180 @@
+.features {
+	display: flex;
+	gap: 32px;
+	align-items: flex-start;
+
+	@media screen and (max-width: 1280px) {
+		gap: 16px;
+	}
+}
+
+.features__img {
+	display: block;
+	object-fit: contain;
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.feature {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 54px;
+
+	.feature__num {
+		font-size: clamp(1.75rem, 1.568rem + 0.7767vw, 2.5rem);
+		font-family: $accentfont;
+		color: $accent;
+	}
+
+	.feature__title {
+		margin-bottom: 16px;
+
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 8px;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		flex-direction: column;
+		gap: 16px;
+		margin-bottom: 40px;
+	}
+}
+
+.reviews__title {
+	font-size: clamp(1.75rem, 1.568rem + 0.7767vw, 2.5rem);
+	font-family: $accentfont;
+	margin-bottom: 34px;
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 16px;
+	}
+
+	&--accent {
+		display: block;
+		color: $accent;
+	}
+}
+
+.reviews__slider-controls {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.reviews__subtitle {
+	a {
+		color: $accent;
+	}
+}
+
+.reviews__slider-controls-arrows {
+	display: flex;
+	gap: 24px;
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.review__body {
+	background: linear-gradient(left, #1c1c1c, #343434);
+	padding: 32px;
+	border-radius: 16px;
+	margin-bottom: 24px;
+
+	@media screen and (max-width: 1024px) {
+		padding: 24px;
+	}
+}
+
+.review__stars {
+	margin-bottom: 12px;
+}
+
+.review__star {
+	&::before {
+		content: url(../../../images/dist/icon-star.png);
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.review__text {
+	color: #fff;
+}
+
+.review__user {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.review__name {
+	margin-bottom: 8px;
+	color: #fff;
+}
+
+.gallery {
+	position: relative;
+
+	.gallery__slider-pagination {
+		bottom: -32px;
+
+		.swiper-pagination-bullet {
+			background: #7e8383;
+			opacity: 1;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: $accent;
+		}
+	}
+}
+
+.gallery__title {
+	font-size: clamp(1.75rem, 1.568rem + 0.7767vw, 2.5rem);
+	color: $accent;
+	font-family: $accentfont;
+	margin-bottom: 64px;
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 32px;
+	}
+}
+
+.gallery__slider {
+	position: relative;
+
+	&--prev,
+	&--next {
+		position: absolute;
+		top: 50%;
+		z-index: 999;
+		transform: translateY(-50%);
+
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&--next {
+		right: 0;
+	}
+}
+
+.gallery__item {
+	padding: 0 90px;
+
+	@media screen and (max-width: 1024px) {
+		padding: 0;
+	}
+}
+
+.gallery__img {
+	display: block;
+	width: 100%;
+}

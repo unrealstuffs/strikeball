@@ -1,0 +1,33 @@
+.promo__item {
+	display: flex;
+	margin-bottom: 54px;
+	font-family: $accentfont;
+	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
+
+	&--accent {
+		color: $accent;
+	}
+
+	&--right {
+		justify-content: flex-end;
+		.promo__item-text {
+			text-align: right;
+		}
+
+		@media screen and (max-width: 640px) {
+			justify-content: flex-start;
+
+			.promo__item-text {
+				text-align: left;
+			}
+		}
+	}
+
+	&--s {
+		margin-bottom: 24px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 24px;
+	}
+}

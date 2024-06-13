@@ -1,0 +1,176 @@
+// USER VARIABLES SECTION
+
+$bgcolor: #1c1c1c;
+$buttoncolorLeft: #242459;
+$buttoncolorRight: #3a3990;
+$accent: #72ec28;
+$fontsize: 18px;
+$textcolor: #7e8383;
+$lineheight: 1.25;
+$userfont: Raleway-Regular, sans-serif;
+$accentfont: akony, sans-serif;
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import 'node_modules/swiper/swiper.scss';
+@import 'node_modules/swiper/modules/navigation.scss';
+@import 'node_modules/swiper/modules/pagination.scss';
+@import 'node_modules/swiper/modules/thumbs.scss';
+@import 'node_modules/swiper/modules/free-mode.scss';
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+	}
+}
+
+@include font('akony', normal, 400, '../fonts/AKONY.woff2');
+@include font('Raleway-Regular', normal, 400, '../fonts/Raleway-Regular.woff2');
+@include font('Raleway-Bold', normal, 700, '../fonts/Raleway-Bold.woff2');
+
+// GENERAL CSS SETTINGS
+
+::placeholder {
+	color: #7e8383;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+input,
+textarea {
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green;
+	}
+}
+
+body {
+	font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	background: #0b0b0c;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+picture {
+	margin: 0;
+	padding: 0;
+}
+
+button,
+a {
+	color: currentColor;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-decoration: none;
+}
+
+a:focus,
+input,
+button:focus {
+	outline: none;
+}
+
+button:disabled {
+	outline: 1px solid currentColor;
+	pointer-events: none;
+}
+.container {
+	padding: 0 16px;
+	max-width: 1536px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 1536px) {
+		max-width: 1280px;
+	}
+
+	@media screen and (max-width: 1280px) {
+		max-width: 1024px;
+	}
+}
+
+.page-section {
+	margin-bottom: 120px;
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 64px;
+	}
+}
+
+.button {
+	display: inline-block;
+	border: none;
+	border-radius: 32px;
+	padding: 16px 48px;
+	color: white;
+	font-family: Raleway, sans-serif;
+	font-size: 18px;
+	background: linear-gradient(left, $buttoncolorLeft, $buttoncolorRight);
+	cursor: pointer;
+
+	&--transparent {
+		background: transparent;
+		border: 1px solid #fff;
+	}
+}
+
+.slider-arrow {
+	border: 1px solid #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $accent;
+	}
+
+	&--disabled {
+		opacity: 0.6;
+
+		&:hover {
+			border-color: #fff;
+		}
+	}
+}

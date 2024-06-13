@@ -1,0 +1,128 @@
+.certificate {
+	margin-top: 118px;
+
+	@media screen and (max-width: 1024px) {
+		margin-top: 64px;
+	}
+}
+
+.certificate__title {
+	margin-bottom: 100px;
+	font-family: $accentfont;
+	color: $accent;
+
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 70px;
+	}
+
+	&--top {
+		font-size: clamp(0.875rem, 0.4502rem + 1.8123vw, 2.625rem);
+	}
+
+	&--bottom {
+		text-align: right;
+		font-size: clamp(1.75rem, 0.8853rem + 3.6893vw, 5.3125rem);
+
+		@media screen and (max-width: 640px) {
+			margin-right: 50px;
+		}
+	}
+
+	&--break {
+		@media screen and (max-width: 640px) {
+			display: block;
+			margin-right: -50px;
+		}
+	}
+}
+
+.certificate__img {
+	display: block;
+	margin: 0 auto 64px;
+	max-width: 864px;
+	width: 100%;
+
+	@media screen and (max-width: 640px) {
+		margin-bottom: 32px;
+	}
+}
+
+.certificate__price {
+	font-family: $accentfont;
+	color: $accent;
+	text-align: center;
+	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
+}
+
+.conditions__title {
+	font-family: $accentfont;
+	color: $accent;
+	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
+	margin-bottom: 64px;
+
+	@media screen and (max-width: 640px) {
+		margin-bottom: 40px;
+	}
+
+	span {
+		display: block;
+	}
+
+	&--top {
+		color: $textcolor;
+	}
+
+	&--bottom {
+		text-align: right;
+	}
+}
+
+.conditions__items {
+	display: grid;
+	gap: 32px;
+	grid-template-columns: 1fr 1fr;
+
+	@media screen and (max-width: 1024px) {
+		gap: 20px;
+		grid-template-columns: 1fr;
+	}
+}
+
+.condition {
+	background: linear-gradient(left, #1c1c1c, #343434);
+	border-radius: 16px;
+	padding: 24px;
+
+	@media screen and (max-width: 768px) {
+		padding: 16px;
+	}
+
+	&__img {
+		margin-bottom: 24px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+		font-family: $accentfont;
+		color: $accent;
+		font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
+		margin-bottom: 16px;
+		width: 65%;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 8px;
+			width: 100%;
+		}
+	}
+
+	&__desc {
+		width: 65%;
+
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
+	}
+}

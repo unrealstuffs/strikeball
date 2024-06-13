@@ -1,0 +1,26 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	@media screen and (max-width: 640px) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+}
+
+.footer__phone {
+	color: white;
+	font-family: $accentfont;
+	font-size: 18px;
+}
+
+.footer__socials-links {
+	display: flex;
+	gap: 24px;
+}
