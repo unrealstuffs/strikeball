@@ -23,11 +23,14 @@
 }
 
 .set {
-	flex-basis: 30%;
+	flex-basis: calc(33.3% - 21.3px);
 	background-color: #282828;
 	border-radius: 16px;
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1280px) {
+		flex-basis: calc(50% - 16px);
+	}
+	@media screen and (max-width: 768px) {
 		flex-basis: 100%;
 	}
 }
@@ -35,6 +38,7 @@
 .set__img {
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .set__text {

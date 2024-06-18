@@ -4,6 +4,12 @@
 	margin-bottom: 100px;
 	justify-content: flex-start;
 
+	&:nth-child(3n - 2) {
+		.polygon__img {
+			flex-basis: 50%;
+		}
+	}
+
 	&:nth-child(even) {
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -63,6 +69,7 @@
 
 .polygon__img {
 	position: relative;
+	flex-basis: 100%;
 
 	img {
 		display: block;

@@ -12,7 +12,7 @@
 	background-size: cover;
 	border-radius: 16px;
 	text-align: center;
-	padding: 144px 0;
+	padding: 91px 0;
 }
 
 .page-title__text {
@@ -21,7 +21,12 @@
 }
 
 .page-title__main {
-	font-size: clamp(1.75rem, 0.8095rem + 4.0129vw, 5.625rem);
+	font-size: 90px;
+	line-height: 99px;
+
+	@media screen and (max-width: 1280px) {
+		font-size: clamp(1.75rem, 0.8095rem + 4.0129vw, 5.625rem);
+	}
 }
 
 .page-title__submain {
@@ -29,5 +34,6 @@
 }
 
 .page-title__desc {
+	margin-top: 32px;
 	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
 }

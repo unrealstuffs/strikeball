@@ -4,17 +4,18 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	background-image: url(../images/dist/Img_1.png);
-	background-position: 50% 0;
-	background-size: cover;
+	background-image: url(../images/dist/banner-main.png);
 	background-repeat: no-repeat;
-	height: 650px;
+	height: 644px;
+	margin-top: 40px;
+	margin-bottom: 80px;
 }
 
 .main__name {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
+	padding-top: 60px;
 }
 
 .main__name-title,
@@ -24,9 +25,12 @@
 }
 
 .main__name-title {
-	font-size: clamp(2.125rem, 1.3058rem + 3.4951vw, 5.5rem);
+	font-size: 88px;
 	margin-bottom: 32px;
 
+	@media screen and (max-width: 1280px) {
+		font-size: clamp(2.125rem, 1.3058rem + 3.4951vw, 5.5rem);
+	}
 	@media screen and (max-width: 1024px) {
 		.main__letter-spacing {
 			display: block;
@@ -37,23 +41,17 @@
 
 .main__name-desc {
 	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
-	margin-left: 200px;
+	margin-left: 186px;
 
 	@media screen and (max-width: 1536px) {
 		margin-left: 100px;
 	}
 }
 
-.underlay {
-	position: relative;
-	background-image: url(../images/BG.png);
-	background-position: center;
-	background-size: cover;
-}
-
 .about {
 	display: flex;
 	gap: 64px;
+	margin-bottom: 145px;
 
 	@media screen and (max-width: 1280px) {
 		flex-direction: column;
@@ -61,7 +59,7 @@
 }
 
 .about__left {
-	width: 50%;
+	width: 80%;
 
 	@media screen and (max-width: 1280px) {
 		width: 100%;
@@ -113,6 +111,11 @@
 	@media screen and (max-width: 1280px) {
 		margin-top: 26px;
 	}
+}
+
+.cards {
+	margin-bottom: 0;
+	padding-bottom: 264px;
 }
 
 .cards__wrap {

@@ -115,11 +115,11 @@ button:disabled {
 }
 .container {
 	padding: 0 16px;
-	max-width: 1536px;
+	max-width: 1328px;
 	margin: 0 auto;
 
 	@media screen and (max-width: 1536px) {
-		max-width: 1280px;
+		max-width: 1312px;
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -128,7 +128,7 @@ button:disabled {
 }
 
 .page-section {
-	margin-bottom: 120px;
+	margin-bottom: 80px;
 
 	@media screen and (max-width: 1024px) {
 		margin-bottom: 64px;
@@ -136,19 +136,42 @@ button:disabled {
 }
 
 .button {
+	position: relative;
 	display: inline-block;
 	border: none;
 	border-radius: 32px;
-	padding: 16px 48px;
+	padding: 16px 58px;
 	color: white;
-	font-family: Raleway, sans-serif;
 	font-size: 18px;
-	background: linear-gradient(left, $buttoncolorLeft, $buttoncolorRight);
+	background: #39388f;
+	box-shadow: 200px 0 130px -100px #242459 inset;
 	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		box-shadow: 200px 0 130px -100px #3a3a85 inset;
+		background: #4a49aa;
+	}
+
+	&:active {
+		box-shadow: 200px 0 130px -100px #1e1e4f inset;
+		background: #2d2c77;
+	}
+
+	&:disabled {
+		background: #7e8383;
+	}
 
 	&--transparent {
 		background: transparent;
 		border: 1px solid #fff;
+		box-shadow: none;
+
+		&:hover,
+		&:active {
+			box-shadow: none;
+			background: transparent;
+		}
 	}
 }
 
@@ -172,5 +195,11 @@ button:disabled {
 		&:hover {
 			border-color: #fff;
 		}
+	}
+}
+
+.no-bg {
+	.contacts {
+		background-image: none;
 	}
 }

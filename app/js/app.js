@@ -3,6 +3,7 @@ import Form from './form.js'
 import Slider from './slider.js'
 import Gallery from './gallery.js'
 import MobileMenu from './mobile-menu.js'
+import Header from './header.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 	class App {
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			this.slider = new Slider()
 			this.mobileMenu = new MobileMenu()
 			this.gallery = new Gallery()
+			this.header = new Header()
 		}
 	}
 

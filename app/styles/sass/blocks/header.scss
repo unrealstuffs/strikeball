@@ -39,11 +39,9 @@
 	position: relative;
 }
 
+.header__link--active,
+.nav-link--active,
 .header__link:hover {
-	color: $accent;
-}
-
-.header__link--active {
 	color: $accent;
 }
 
@@ -64,6 +62,10 @@
 	display: block;
 	border-bottom: 1px dashed #2c2c2c;
 	color: #fff;
+
+	&.nav-link--active {
+		color: $accent;
+	}
 }
 
 .dropdown__link:hover {
@@ -93,14 +95,6 @@
 		transform: translateY(0%);
 	}
 }
-
-// .mobile-menu__icon {
-// 	display: none;
-
-// 	@media screen and (max-width: 768px) {
-// 		display: block;
-// 	}
-// }
 
 .mobile-menu__main {
 	display: flex;

@@ -80,11 +80,18 @@
 	}
 }
 
+.review {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
 .review__body {
 	background: linear-gradient(left, #1c1c1c, #343434);
 	padding: 32px;
 	border-radius: 16px;
 	margin-bottom: 24px;
+	height: 100%;
 
 	@media screen and (max-width: 1024px) {
 		padding: 24px;
@@ -97,7 +104,7 @@
 
 .review__star {
 	&::before {
-		content: url(../../../images/dist/icon-star.png);
+		content: url(../images/dist/icon-star.png);
 		width: 16px;
 		height: 16px;
 	}
