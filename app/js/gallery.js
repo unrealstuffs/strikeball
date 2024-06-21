@@ -95,9 +95,10 @@ export default class Gallery {
 	}
 
 	event() {
-		if (!this.openGalleryButtons || !this.closeGalleryButton) {
+		if (!this.openGalleryButtons.length) {
 			return
 		}
+
 		this.openGalleryButtons.forEach(button => {
 			button.addEventListener('click', () => {
 				this.openGallery()

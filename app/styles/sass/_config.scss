@@ -125,6 +125,9 @@ button:disabled {
 	@media screen and (max-width: 1280px) {
 		max-width: 1024px;
 	}
+	@media screen and (max-width: 768px) {
+		padding: 0 16px;
+	}
 }
 
 .page-section {
@@ -201,5 +204,9 @@ button:disabled {
 .no-bg {
 	.contacts {
 		background-image: none;
+	}
+
+	.contacts__left-title {
+		display: none;
 	}
 }

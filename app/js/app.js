@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	class App {
 		constructor() {
 			this.dropdown = new Dropdown()
-			this.form = new Form()
 			this.slider = new Slider()
 			this.mobileMenu = new MobileMenu()
 			this.gallery = new Gallery()
+			this.form = new Form()
 			this.header = new Header()
 		}
 	}

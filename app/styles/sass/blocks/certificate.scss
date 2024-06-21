@@ -1,5 +1,11 @@
 .certificate {
-	margin-top: 118px;
+	padding-top: 118px;
+	background-image: url(../images/dist/bg-shot.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding-bottom: 80px;
+	margin-bottom: 0;
 
 	@media screen and (max-width: 1024px) {
 		margin-top: 64px;

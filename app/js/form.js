@@ -107,6 +107,9 @@ export default class Form {
 	}
 
 	event() {
+		if (!this.phoneInput) {
+			return
+		}
 		this.phoneInput.addEventListener('input', e => {
 			this.errors.phone = false
 			this.hideFormErrors()
