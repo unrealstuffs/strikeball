@@ -87,15 +87,16 @@
 	display: grid;
 	gap: 32px;
 	grid-template-columns: 1fr 1fr;
-
+	grid-template-rows: auto;
 	@media screen and (max-width: 1024px) {
 		gap: 20px;
 		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 	}
 }
 
 .condition {
-	background: linear-gradient(left, #1c1c1c, #343434);
+	background: linear-gradient(to right, #1c1c1c, #343434);
 	border-radius: 16px;
 	padding: 24px;
 

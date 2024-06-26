@@ -3,6 +3,11 @@
 	margin-bottom: 54px;
 	font-family: $accentfont;
 	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
+	line-height: 44px;
+
+	&--small {
+		margin-bottom: 24px;
+	}
 
 	&--accent {
 		color: $accent;

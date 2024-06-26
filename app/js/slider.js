@@ -18,6 +18,9 @@ export default class Slider {
 				prevEl: '.reviews__slider-controls-arrows--left',
 				disabledClass: 'slider-arrow--disabled',
 			},
+			pagination: {
+				el: '.review__pagination',
+			},
 			breakpoints: {
 				640: {
 					slidesPerView: 2,

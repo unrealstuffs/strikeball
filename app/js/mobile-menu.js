@@ -5,25 +5,20 @@ export default class MobileMenu {
 		this.mobileMenuLinks = document.querySelectorAll('.mobile-menu__main a')
 		this.mobileMenuDropdown = document.querySelector('.mobile-menu__dropdown')
 		this.mobileMenuDropdownLink = document.querySelector('.mobile-menu__link--dropdown')
+		this.body = document.body
 
 		this.event()
 	}
 
 	toggleDropdownMenu() {
 		this.mobileMenuDropdown.classList.toggle('mobile-menu__dropdown--open')
+		this.mobileMenuDropdownLink.classList.toggle('header__link--active')
 	}
 
 	toggleMobileMenu() {
 		this.mobileMenuIcon.classList.toggle('open')
 		this.mobileMenu.classList.toggle('mobile-menu--open')
-	}
-
-	openMobileMenu() {
-		this.mobileMenu.classList.add('mobile-menu--open')
-	}
-
-	closeMobileMenu() {
-		this.mobileMenu.classList.remove('mobile-menu--open')
+		this.body.classList.toggle('lock')
 	}
 
 	event() {

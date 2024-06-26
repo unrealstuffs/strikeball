@@ -1,8 +1,10 @@
 .page-title {
 	margin-top: 32px;
+	margin-bottom: 80px;
 
 	@media screen and (max-width: 768px) {
 		margin-top: 16px;
+		margin-bottom: 64px;
 	}
 }
 
@@ -13,6 +15,14 @@
 	border-radius: 16px;
 	text-align: center;
 	padding: 91px 0;
+
+	&--large {
+		padding: 141px 0;
+	}
+
+	&--medium {
+		padding: 121px 0;
+	}
 }
 
 .page-title__text {
@@ -26,6 +36,7 @@
 
 	@media screen and (max-width: 1280px) {
 		font-size: clamp(1.75rem, 0.8095rem + 4.0129vw, 5.625rem);
+		line-height: 1.4;
 	}
 }
 
@@ -34,6 +45,6 @@
 }
 
 .page-title__desc {
-	margin-top: 32px;
+	margin-top: 4px;
 	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
 }

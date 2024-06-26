@@ -54,12 +54,20 @@
 
 .polygon__coords {
 	font-size: clamp(1rem, 0.9697rem + 0.1294vw, 1.125rem);
+	display: flex;
+	gap: 12px;
+	align-items: center;
+
+	&::before {
+		content: url(../images/dist/location.png);
+		display: block;
+	}
 }
 
 .polygon__subtitle {
 	margin-top: 32px;
 	margin-bottom: 8px;
-	font-weight: bold;
+	font-weight: 500;
 	color: #fff;
 
 	@media screen and (max-width: 1280px) {
@@ -93,6 +101,14 @@
 
 	&:hover {
 		opacity: 1;
+	}
+}
+
+.polygon__open-mobile {
+	display: none;
+
+	@media screen and (max-width: 640px) {
+		display: block;
 	}
 }
 
