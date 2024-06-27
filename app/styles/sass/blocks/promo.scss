@@ -1,9 +1,9 @@
 .promo__item {
 	display: flex;
-	margin-bottom: 54px;
+	margin-bottom: 32px;
 	font-family: $accentfont;
-	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
-	line-height: 44px;
+	font-size: clamp(2.5rem, 2.8641rem + -1.5534vw, 1rem);
+	line-height: 1.4;
 
 	&--small {
 		margin-bottom: 24px;

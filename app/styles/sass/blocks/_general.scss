@@ -39,18 +39,14 @@
 	padding-top: 60px;
 }
 
-.main__name-title,
-.main__name-desc {
-	color: $accent;
-	font-family: $accentfont;
-}
-
 .main__name-title {
-	font-size: 88px;
-	margin-bottom: 32px;
+	font-size: 80px;
+	margin-bottom: 24px;
+	font-family: $titlefont;
+	color: $accent;
 
 	@media screen and (max-width: 1280px) {
-		font-size: clamp(2.125rem, 1.3058rem + 3.4951vw, 5.5rem);
+		font-size: clamp(2.125rem, 1.4272rem + 2.9773vw, 5rem);
 	}
 	@media screen and (max-width: 1024px) {
 		.main__letter-spacing {
@@ -61,8 +57,9 @@
 }
 
 .main__name-desc {
-	font-size: clamp(0.875rem, 0.784rem + 0.3883vw, 1.25rem);
+	font-size: clamp(1.125rem, 0.9126rem + 0.9061vw, 2rem);
 	margin-left: 186px;
+	font-family: $accentfont;
 
 	@media screen and (max-width: 1536px) {
 		margin-left: 100px;
@@ -119,7 +116,7 @@
 .about__desc-highlight-letter {
 	color: $textcolor;
 	font-family: $accentfont;
-	font-size: clamp(1rem, 0.9393rem + 0.2589vw, 1.25rem);
+	font-size: clamp(1.5rem, 1.4393rem + 0.2589vw, 1.75rem);
 	line-height: 32px;
 }
 
@@ -226,9 +223,9 @@
 }
 
 .cards__desc {
-	color: $accent;
+	color: #fff;
 	font-family: $accentfont;
-	font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
+	font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
 	line-height: 38px;
 	position: absolute;
 

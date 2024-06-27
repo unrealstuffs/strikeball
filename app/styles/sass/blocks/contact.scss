@@ -27,11 +27,7 @@
 .contacts__left-title {
 	color: $accent;
 	font-family: $accentfont;
-	font-size: 40px;
-
-	@media screen and (max-width: 640px) {
-		font-size: 28px;
-	}
+	font-size: clamp(1.75rem, 1.568rem + 0.7767vw, 2.5rem);
 }
 
 .contacts__menu-left {
@@ -74,12 +70,8 @@
 .links-inst {
 	color: white;
 	font-family: $accentfont;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem);
 	line-height: 20px;
-
-	@media screen and (max-width: 1024px) {
-		font-size: 16px;
-	}
 }
 
 .links-phone:hover,
@@ -124,10 +116,8 @@
 .forms-record {
 	margin-block-end: 8px;
 	color: white;
-	font-family: AKONY, sans-serif;
-	font-weight: 500;
-	font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-	line-height: 20px;
+	font-family: $accentfont;
+	font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
 	text-align: center;
 }
 
@@ -198,7 +188,7 @@
 	}
 
 	&__title {
-		font-size: 18px;
+		font-size: 24px;
 		font-family: $accentfont;
 		color: #fff;
 		margin-bottom: 12px;

@@ -7,8 +7,9 @@ $accent: #72ec28;
 $fontsize: 18px;
 $textcolor: #7e8383;
 $lineheight: 1.25;
-$userfont: Raleway-Regular, sans-serif;
-$accentfont: akony, sans-serif;
+$titlefont: akony-app, sans-serif;
+$accentfont: bowler-app, sans-serif;
+$userfont: Raleway-app, sans-serif;
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 
 // @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
@@ -28,10 +29,11 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	}
 }
 
-@include font('akony', normal, 400, '../fonts/AKONY.woff2');
-@include font('Raleway', normal, 400, '../fonts/Raleway-Regular.woff2');
-@include font('Raleway', normal, 500, '../fonts/Raleway-Medium.woff2');
-@include font('Raleway', normal, 700, '../fonts/Raleway-Bold.woff2');
+@include font('akony-app', normal, 400, '../fonts/AKONY.woff2');
+@include font('bowler-app', normal, 400, '../fonts/BOWLER.woff2');
+@include font('Raleway-app', normal, 400, '../fonts/Raleway-Regular.woff2');
+@include font('Raleway-app', normal, 500, '../fonts/Raleway-Medium.woff2');
+@include font('Raleway-app', normal, 700, '../fonts/Raleway-Bold.woff2');
 
 // GENERAL CSS SETTINGS
 
