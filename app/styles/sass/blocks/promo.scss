@@ -2,8 +2,9 @@
 	display: flex;
 	margin-bottom: 32px;
 	font-family: $accentfont;
-	font-size: clamp(2.5rem, 2.8641rem + -1.5534vw, 1rem);
+	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
 	line-height: 1.4;
+	font-weight: 400;
 
 	&--small {
 		margin-bottom: 24px;
@@ -27,6 +28,20 @@
 			}
 		}
 	}
+	&--center {
+		justify-content: center;
+		.promo__item-text {
+			text-align: center;
+		}
+
+		@media screen and (max-width: 640px) {
+			justify-content: flex-start;
+
+			.promo__item-text {
+				text-align: left;
+			}
+		}
+	}
 
 	&--s {
 		margin-bottom: 24px;
@@ -36,7 +51,7 @@
 		margin-bottom: 24px;
 	}
 
-	@media screen and (max-width: 640px) {
-		line-height: 22px;
-	}
+	// @media screen and (max-width: 640px) {
+	// 	line-height: 22px;
+	// }
 }

@@ -43,6 +43,7 @@
 	font-size: 80px;
 	margin-bottom: 24px;
 	font-family: $titlefont;
+
 	color: $accent;
 
 	@media screen and (max-width: 1280px) {
@@ -60,6 +61,7 @@
 	font-size: clamp(1.125rem, 0.9126rem + 0.9061vw, 2rem);
 	margin-left: 186px;
 	font-family: $accentfont;
+	font-weight: 400;
 
 	@media screen and (max-width: 1536px) {
 		margin-left: 100px;
@@ -109,6 +111,7 @@
 	font-family: $accentfont;
 	font-size: clamp(1.75rem, 1.568rem + 0.7767vw, 2.5rem);
 	margin-bottom: 24px;
+	font-weight: 400;
 }
 
 .about__desc-top,
@@ -228,6 +231,7 @@
 	font-size: clamp(1.5rem, 1.3786rem + 0.5178vw, 2rem);
 	line-height: 38px;
 	position: absolute;
+	font-weight: 400;
 
 	@media screen and (max-width: 1280px) {
 		line-height: 28px;

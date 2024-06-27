@@ -29,7 +29,8 @@
 
 .game-text__title {
 	font-family: $accentfont;
-	color: $accent;
+	color: #fff;
+	font-weight: 400;
 	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
 	margin-bottom: 24px;
 

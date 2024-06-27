@@ -55,9 +55,10 @@
 
 .certificate__price {
 	font-family: $accentfont;
-	color: $accent;
+	color: #fff;
 	text-align: center;
 	font-size: clamp(1rem, 0.3325rem + 2.8479vw, 3.75rem);
+	font-weight: 400;
 }
 
 .conditions__title {
@@ -110,9 +111,10 @@
 
 	&__title {
 		font-family: $accentfont;
-		color: $accent;
+		color: #fff;
 		font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
 		margin-bottom: 16px;
+		font-weight: 400;
 
 		@media screen and (max-width: 768px) {
 			margin-bottom: 8px;
@@ -121,7 +123,7 @@
 	}
 
 	&__desc {
-		width: 65%;
+		width: 90%;
 
 		@media screen and (max-width: 768px) {
 			width: 100%;

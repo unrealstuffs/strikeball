@@ -72,15 +72,32 @@ export default class Form {
 		return true
 	}
 
-	submitForm(e) {
+	async submitForm(e) {
 		e.preventDefault()
 		const formData = new FormData(e.target)
 		const name = formData.get('name')
 		const phone = formData.get('phone')
 
 		if (this.validateForm(name, phone)) {
-			// Send this bullshit to server
-			this.showModal('success')
+			try {
+				const response = await fetch('http://localhost/sendMessage.php', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({ name, phone }),
+				})
+
+				const data = await response.json()
+
+				if (data.error) {
+					this.showModal('error')
+				} else {
+					this.showModal('success')
+				}
+			} catch {
+				this.showModal('error')
+			}
 		} else {
 			this.showFormErrors()
 		}
