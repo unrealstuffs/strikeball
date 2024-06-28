@@ -1,6 +1,7 @@
 .sets__title {
 	text-align: right;
 	font-family: $accentfont;
+	letter-spacing: 1px;
 	color: #fff;
 	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
 	margin-bottom: 64px;
@@ -52,6 +53,7 @@
 
 .set__title {
 	font-family: $accentfont;
+	letter-spacing: 1px;
 	font-size: clamp(1rem, 0.9393rem + 0.2589vw, 1.25rem);
 	margin-bottom: 22px;
 	color: #fff;

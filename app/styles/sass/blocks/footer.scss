@@ -27,6 +27,7 @@
 .footer__phone {
 	color: white;
 	font-family: $accentfont;
+	letter-spacing: 1px;
 	font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
 	font-weight: 400;
 }
