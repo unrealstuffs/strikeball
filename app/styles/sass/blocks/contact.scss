@@ -219,6 +219,7 @@
 	.contacts__container {
 		padding-top: 0;
 		padding-bottom: 0;
+		align-items: center;
 	}
 
 	.contacts__left-title {
@@ -227,6 +228,5 @@
 
 	.contacts__menu-left {
 		row-gap: 32px;
-		margin-top: 0;
 	}
 }
