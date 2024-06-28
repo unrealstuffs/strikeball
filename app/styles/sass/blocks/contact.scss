@@ -216,11 +216,17 @@
 		background-image: none;
 	}
 
+	.contacts__container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	.contacts__left-title {
 		display: none;
 	}
 
 	.contacts__menu-left {
-		row-gap: 64px;
+		row-gap: 32px;
+		margin-top: 0;
 	}
 }

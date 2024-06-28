@@ -2,7 +2,7 @@
 	display: flex;
 	margin-bottom: 32px;
 	font-family: $accentfont;
-	font-size: clamp(1rem, 0.6359rem + 1.5534vw, 2.5rem);
+	font-size: 40px;
 	line-height: 1.4;
 	font-weight: 400;
 
@@ -51,7 +51,7 @@
 		margin-bottom: 24px;
 	}
 
-	// @media screen and (max-width: 640px) {
-	// 	line-height: 22px;
-	// }
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+	}
 }

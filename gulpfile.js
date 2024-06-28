@@ -113,23 +113,23 @@ function images() {
 function buildcopy() {
 	return src(['{app/js,app/css}/*.min.*', 'app/images/**/*.*', '!app/images/src/**/*', 'app/fonts/**/*'], {
 		base: 'app/',
-	}).pipe(dest('dist'))
+	}).pipe(dest('docs'))
 }
 
 async function buildhtml() {
-	let includes = new ssi('app/', 'dist/', '/**/*.html')
+	let includes = new ssi('app/', 'docs/', '/**/*.html')
 	includes.compile()
-	await deleteAsync('dist/parts', { force: true })
+	await deleteAsync('docs/parts', { force: true })
 }
 
 async function cleandist() {
-	await deleteAsync('dist/**/*', { force: true })
+	await deleteAsync('docs/**/*', { force: true })
 }
 
 function deploy() {
-	return src('dist/').pipe(
+	return src('docs/').pipe(
 		rsync({
-			root: 'dist/',
+			root: 'docs/',
 			hostname: 'username@yousite.com',
 			destination: 'yousite/public_html/',
 			clean: true, // Mirror copy with file deletion
