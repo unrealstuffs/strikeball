@@ -71,7 +71,7 @@
 .links-inst {
 	color: white;
 	font-family: $accentfont;
-	font-size: clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem);
+	font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
 	line-height: 20px;
 	font-weight: 400;
 }
@@ -88,7 +88,7 @@
 	font-family: $userfont;
 	margin-top: 8px;
 	color: white;
-	font-size: 14px;
+	font-size: clamp(0.875rem, 0.8447rem + 0.1294vw, 1rem);
 	line-height: 18px;
 }
 
@@ -113,6 +113,10 @@
 	color: white;
 	background: linear-gradient(to right, #1c1c1c, #343434);
 	background-color: rgba(28, 28, 28, 1);
+
+	@media screen and (max-width: 640px) {
+		padding: 16px;
+	}
 }
 
 .forms-record {
@@ -162,6 +166,7 @@
 .contact-modal {
 	position: fixed;
 	opacity: 0;
+	z-index: 9999;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -1000%);
@@ -172,6 +177,13 @@
 	padding: 50px 60px;
 	border-radius: 16px;
 	transition: opacity 0.25s ease;
+
+	@media screen and (max-width: 1024px) {
+		width: 60%;
+	}
+	@media screen and (max-width: 640px) {
+		width: 100%;
+	}
 
 	&--open {
 		transform: translate(-50%, -50%);

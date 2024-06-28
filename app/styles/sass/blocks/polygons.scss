@@ -13,10 +13,6 @@
 	&:nth-child(even) {
 		flex-direction: row-reverse;
 		justify-content: space-between;
-
-		.polygon__title {
-			color: $accent;
-		}
 	}
 
 	@media screen and (max-width: 1280px) {

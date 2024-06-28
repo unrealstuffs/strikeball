@@ -14,14 +14,34 @@
 	}
 }
 
+.footer__logo-image {
+	width: 64px;
+	height: 64px;
+
+	@media screen and (max-width: 640px) {
+		width: 44px;
+		height: 44px;
+	}
+}
+
 .footer__phone {
 	color: white;
 	font-family: $accentfont;
-	font-size: 28px;
+	font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
 	font-weight: 400;
 }
 
 .footer__socials-links {
 	display: flex;
 	gap: 24px;
+}
+
+.footer__social-icon {
+	width: 48px;
+	height: 48px;
+
+	@media screen and (max-width: 640px) {
+		width: 40px;
+		height: 40px;
+	}
 }
