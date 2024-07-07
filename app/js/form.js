@@ -80,7 +80,7 @@ export default class Form {
 
 		if (this.validateForm(name, phone)) {
 			try {
-				const response = await fetch('http://localhost/sendMessage.php', {
+				const response = await fetch('./sendMessage.php', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',

@@ -111,9 +111,12 @@ function images() {
 }
 
 function buildcopy() {
-	return src(['{app/js,app/css}/*.min.*', 'app/images/**/*.*', '!app/images/src/**/*', 'app/fonts/**/*'], {
-		base: 'app/',
-	}).pipe(dest('docs'))
+	return src(
+		['{app/js,app/css}/*.min.*', 'app/*.php', 'app/images/**/*.*', '!app/images/src/**/*', 'app/fonts/**/*'],
+		{
+			base: 'app/',
+		}
+	).pipe(dest('docs'))
 }
 
 async function buildhtml() {

@@ -85,6 +85,12 @@
 	img {
 		display: block;
 		width: 100%;
+		object-fit: cover;
+		border-radius: 16px;
+
+		@media screen and (max-width: 640px) {
+			height: 236px;
+		}
 	}
 }
 
